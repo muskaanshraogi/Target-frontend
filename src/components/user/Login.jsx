@@ -87,7 +87,7 @@ export default function Login() {
       return
     }
     Axios.post(
-      "http://localhost:8000/api/staff/login",
+      `${process.env.REACT_APP_HOST}/api/staff/login`,
       details,
       {
         headers: {

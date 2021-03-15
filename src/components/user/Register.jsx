@@ -118,7 +118,7 @@ export default function Register() {
         return;
       }
       Axios.post(
-        "http://localhost:8000/api/staff/register",
+        `${process.env.REACT_APP_HOST}/api/staff/register`,
         details,
         { 
           headers: 
