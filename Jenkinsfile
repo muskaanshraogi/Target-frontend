@@ -5,6 +5,8 @@ pipeline {
     stage('Build') {
       steps {
           echo 'Building...'
+          sh "npm install -g yarn"
+          sh "yarn install"
       }
     }
     
